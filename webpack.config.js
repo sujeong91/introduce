@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 module.exports = {
     // entry file
@@ -10,7 +11,7 @@ module.exports = {
         filename: 'js/bundle.js'
     },
     plugins: [
-        new MiniCssExtractPlugin({ filename: 'css/style.css' })
+        new MiniCssExtractPlugin({ filename: 'css/style.css' }),
     ],
     module: {
         rules: [
@@ -28,14 +29,34 @@ module.exports = {
                 }
             },
             {
-                test: /\.scss$/,
+                test: [/\.scss$/, /\.css$/],
                 use: [
                     MiniCssExtractPlugin.loader,
                     "css-loader",
                     "sass-loader"
                 ],
                 exclude: /node_modules/
-            }
+            },
+            {
+                test: /\.(woff|woff2|ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: 'url-loader',
+                options: {
+                    publicPath: '../font', // file 경로 수정. file 경로 수정은 outputPath보다 우선순위 있음.
+                    outputPath: 'font/', // file 경로 수정 및 파일 위치 변경
+                    name: '[hash].[ext]',
+                    limit: 10000,
+                },
+            },
+            {
+                test: /\.(ico|png|jpg|jpeg|gif|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: 'url-loader',
+                options: {
+                    publicPath: '../img', 
+                    outputPath: 'img/',
+                    name: '[hash].[ext]',
+                    limit: 10000,
+                },
+            },
         ]
     },
     devtool: 'source-map',

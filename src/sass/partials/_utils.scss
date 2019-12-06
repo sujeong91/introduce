@@ -1,0 +1,22 @@
+.u-clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.u-hidden {
+    overflow: hidden;
+    position: absolute;
+    left: -10000px;
+    clip:   rect(1px,1px,1px,1px);
+    width:  1px;
+    height: 1px;
+    border: 0;
+}
+caption.u-hidden {
+    position: static;
+}
+.l-wrapper { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    box-sizing: border-box;
+}

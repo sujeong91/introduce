@@ -1,2 +1,10 @@
-@import "partials/vars";
-@import "partials/body";
+@import "partials/reset";
+@import "partials/utils";
+@import "font/NotoSans/notosans.css";
+
+html { font-size: 62.5%; }
+body { 
+  text-align: center;
+  font-size: 1.6rem; 
+  font-family: 'NotoKrL', 'Malgun Gothic', 'dotum', 'gulim' , 'sans-serif';
+}
