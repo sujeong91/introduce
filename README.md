@@ -18,7 +18,7 @@
 
 #### 3) 특징
 기존에 있던 소스를 업그레이드 했습니다.
-기존 스펙은 html, css, es5 js, jquery를 이용한 방법이며 '' repository에서 확인 가능합니다.
+기존 스펙은 html, css, es5 js, jquery를 이용한 방법이며 'deprecatedPortfolio' repository에서 확인 가능합니다.
 babel과 webpack으로 프론트 환경을 구축할 수 있게 되면서 scss로 css를 더 구조화할 수 있었고,
 es6+ 최신 자바스크립트 문법과 모듈화를 이룰 수 있었습니다.
 
