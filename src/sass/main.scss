@@ -1,10 +1,236 @@
 @import "partials/reset";
 @import "partials/utils";
+@import "partials/common";
 @import "font/NotoSans/notosans.css";
 
 html { font-size: 62.5%; }
 body { 
-  text-align: center;
   font-size: 1.6rem; 
   font-family: 'NotoKrL', 'Malgun Gothic', 'dotum', 'gulim' , 'sans-serif';
 }
+
+header { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box; 
+  position: fixed; z-index: 1000; 
+  padding: 1em 2em;
+  width: 100%; 
+  background-color: transparent; 
+  color: #fff; 
+  transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+
+  .header-logo {
+    width: 8em;
+  }
+
+  .header-nav-item {
+    position: relative;
+    display: inline-block;
+    font-size: 1.8rem; 
+    padding-left: 1.0em; 
+    border-bottom-width: 0;
+    &:hover {
+      color: #0088cc;
+    }
+    &.on::after {
+      position: absolute;
+      bottom: -1em;
+      left: 0.5em;
+      content: '';
+      width: 100%;
+      border-bottom: 4px solid #0088cc;
+      border-radius: 1px;
+    }
+    // &.scrollOn {
+    //   background-color: #FFF; color: #333; box-shadow: 0px 2px 12px rgba(0,0,0,.3);
+    // }
+  }
+}
+
+#home {
+  position: relative;
+  height: 100vh;
+  min-height: 400px;
+  color: #fff;
+  overflow: hidden;
+
+  .home-bg {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background : url(../img/visual_bg.jpg) 50% 50% no-repeat;
+    background-size: cover;
+  }
+
+  .home-cover {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background: linear-gradient(to left, #34353b, #100609);
+    opacity: 0.8;
+  }
+
+  .home-title { 
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%); 
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top:50%; left: 50%;
+    font-size: 1.6rem;
+    font-weight: normal;
+
+    em {
+      display: block;
+      font-size: 4.5rem;
+      font-style: normal;
+    }
+  }
+
+  .home-scroll {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    -webkit-transform: translate(-50%); 
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+    width: 50px;
+  }
+}
+
+#about-me {
+  background: url(../img/about_icon.jpg) #f2f2f2 no-repeat fixed;
+  background-size: cover;
+  
+  .about-contents {
+    margin-left: 50%;
+  }
+
+  .about-desc {
+    margin: 1.0em 0 2.0em; line-height: 2.0;
+  }
+
+  .about-table { 
+    width: 100%; 
+
+    th, td {
+      padding: 1em 0.5em;
+    }
+
+    th {
+      background-color: rgba(202, 234, 255,.5);
+      text-align: right;
+      width: 100px;
+    }
+  }
+
+  .total-career {
+    font-family: 'NotoKrR';
+    margin-bottom: 1.0em;
+
+    strong {
+      color: orangered;
+    }
+  }
+}
+
+#skill {
+  background-color: #fff;
+
+  .skill-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color:#2385c6;
+    margin:0.5em 0 1.0em;
+    padding: 0.3em;
+    border-top: 2px solid #1476b7;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+  }
+
+  .skill-desc {
+    line-height: 1.7;
+    margin: 0 10px 10px;
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+#works {
+  background-color: #F2F2F2;
+
+  .works-frame {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid #dadada;
+    background-color: #fff;
+  }
+  .works-frame-img { width: 100%; }
+  .works-hiddenFrame {
+    display:block;
+    position: absolute;
+    top:0; bottom:0;left:0;right:0;
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+  }
+  .works-hiddenFrame-textbox {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    text-align: left;
+
+    p {
+      margin-bottom: 1.0em;
+      font-size: 1.4rem;
+    }
+  }
+  .works-hiddenFrame-title { color: #3abafa; }
+  .works-title { 
+    font-size: 1.8rem;
+    margin: 0.3em 0 2.0em;
+
+    &::before {
+      content: '>';
+      margin-right: 10px;
+      color: #2385c6;
+      font-family: 'NotoKrB';
+    }
+  }
+  .works_btn { 
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+  }
+}
+
+#sns {
+  background-color: blueviolet;
+  background: url(../img/github_bg.jpg) no-repeat fixed;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+
+  .sns_title { font-size: 4.0rem; }
+  .sns_title_desc { margin: 1.0em 0 3.0em; }
+  button {
+    margin-right: 0.5em;
+  }
+}
+
+footer {
+  padding: 3.0em;
+  font-size: 1.2rem;
+  background-color: #f7f7f7;
+  color: #999;
+  text-align: center;
+}
+
+
+

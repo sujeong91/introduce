@@ -1,6 +1,5 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 module.exports = {
     // entry file
@@ -50,6 +49,16 @@ module.exports = {
             {
                 test: /\.(ico|png|jpg|jpeg|gif|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 loader: 'url-loader',
+                options: {
+                    publicPath: '../img', 
+                    outputPath: 'img/',
+                    name: '[hash].[ext]',
+                    limit: 10000,
+                },
+            },
+            {
+                test: /\.(ico|png|jpg|jpeg|gif|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: 'file-loader',
                 options: {
                     publicPath: '../img', 
                     outputPath: 'img/',

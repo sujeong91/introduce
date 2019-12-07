@@ -6,12 +6,288 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Introduce Career</title>
 
+    <!-- lib -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- my -->
     <link href="./dist/css/style.css" rel="stylesheet" />
     <script src="./dist/js/bundle.js"></script>
 </head>
 <body>
-    <div class="l-wrapper">
-        Hello World!kk
-    </div>
+    <header>
+        <a class="header-logo" href="/portfolio">
+            <h1>
+                <img class="w-100" src="./src/img/header-logo-white.png" alt="김수정 프론트엔드 포트폴리오">
+            </h1>
+        </a>
+    
+        <nav class="header-nav">
+            <h1 class="blind">navigation</h1>
+            <a class="header-nav-item on" href="home">Home</a>
+            <a class="header-nav-item" href="about-me">AboutMe</a>
+            <a class="header-nav-item" href="skill">Skills</a>
+            <a class="header-nav-item" href="works">Works</a>
+            <a class="header-nav-item" href="sns">SNS</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home-bg ani-bgMove"></div>
+        <div class="home-cover ani-bgShine"></div>
+        <div class="l-wrapper">
+            <h1 class="home-title">
+                <em>Front End Developer</em>
+                developer who love a variety of experiences and new challenges
+            </h1>
+    
+            <img class="home-scroll" src="./src/img/scroll.png" alt="스크롤바 내리기">
+        </div>
+    </section>
+
+    <section id="about-me" class="main-section">
+        <div class="l-wrapper">
+            <div class="about-contents">
+                <h1 class="section_title">ABOUT ME</h1>
+                <p class="about-desc">
+                    반갑습니다:) Front-end Developer 김수정입니다.<br>
+                    좀 더 유지보수가 쉬운 코드, 누구나 알아보기 쉬운 코드를 작성하기 위해 고민하는 개발자입니다.<br>
+                </p>
+                <table class="about-table">
+                    <tr>
+                        <th>이름</th>
+                        <td>김수정</td>
+                    </tr>
+                    <tr>
+                        <th>연락처</th>
+                        <td>010-2476-1551</td>
+                    </tr>
+                    <tr>
+                        <th>메일</th>
+                        <td>bluesv58@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>이력</th>
+                        <td>
+                            <p class="total-career">총 경력: <strong>2</strong>년차 개발자</p>
+                            앤드어스 개발자 대리<br>
+                            퍼블리싱 프리랜서<br>
+                            코디소프트 퍼블리셔 주임<br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="skill" class="main-section">
+        <div class="l-wrapper">
+            <h1 class="section_title">MY SKILLS</h1>
+            <p class="section_title_desc">제가 경험한 개발 기술 및 환경에 대해 소개합니다.</p>
+            <ul class="l-row">
+                <li class="l-col l-col-4">
+                    <p class="skill-title">HTML</p>
+                    <p class="skill-desc">- symentic mark-up에 대한 이해</p>
+                    <p class="skill-desc">- html5 사용</p>
+                    <p class="skill-desc">- video, svg태그 사용 경험 있음</p>
+                </li>
+                <li class="l-col l-col-4">
+                    <p class="skill-title">CSS</p>
+                    <p class="skill-desc">- float를 활용한 그리드 사용 가능</p>
+                    <p class="skill-desc">- flex를 활용한 레이아웃 사용 가능(IE11~)</p>
+                    <p class="skill-desc">- 컴포넌트적이고 유지보수가 가능한 CSS 설계 가능</p>
+                    <p class="skill-desc">- 애니메이션 기능 활용</p>
+                    <p class="skill-desc">- scss 사용</p>
+                    <p class="skill-desc">- 웹폰트 사용 가능</p>
+                    <p class="skill-desc">- 반응형/적응형 가능</p>
+                </li>
+                <li class="l-col l-col-4">
+                    <p class="skill-title">JavaScript</p>
+                    <p class="skill-desc">- es6기반 react 개발 가능</p>
+                    <p class="skill-desc">- jQuery를 활용한 UI스크립팅 가능</p>
+                    <p class="skill-desc">- ajax를 활용한 데이터 바인딩 가능</p>
+                </li>
+                <li class="l-col l-col-4">
+                    <p class="skill-title">TOOL</p>
+                    <p class="skill-desc">- tortoise: add, commit, update, revert, log보기, delete 사용 가능</p>
+                    <p class="skill-desc">- git: add, commit, pull, push, revert, log보기, github활용 가능</p>
+                    <p class="skill-desc">- slack, jira, confluence, zeplin 사용 경험 있음</p>
+                </li>
+                <li class="l-col l-col-4">
+                    <p class="skill-title">DB</p>
+                    <p class="skill-desc">- heidiSQL을 활용한 DB, table생성 및 데이터 조작</p>
+                    <p class="skill-desc">- insert, select, update, delete query문 간단하게 작성 가능</p>
+                    <p class="skill-desc">- mySQL과 php 연동해서 사용한 경험 있음</p>
+                </li>
+                <li class="l-col l-col-4">
+                    <p class="skill-title">SERVER</p>
+                    <p class="skill-desc">- codeignighter를 활용한 php어플리케이션 제작 경험</p>
+                    <p class="skill-desc">- MVC패턴 기반, iframe을 활용한 게시판 유지보수 경험</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="works" class="main-section">
+        <div class="l-wrapper">
+            <h1 class="section_title">WORKS</h1>
+            <p class="section_title_desc">
+            일하면서 작업한 결과물을 소개합니다.<br>
+            공부하면서 만든 저의 코드를 보고 싶다면 <a href="https://github.com/sujeong91" target="_blank">github</a>를 참고해주세요.
+            </p>
+    
+            <ul class="l-row">
+                <li class="l-col l-col-6">
+                    <div class="works-frame">
+                        <img class="works-frame-img" src="img/etri.png" alt="">
+                        <div class="works-hiddenFrame">
+                            <div class="works-hiddenFrame-textbox">
+                                <p><span class="works-hiddenFrame-title">설명</span>: 태양광 전기 p2p 플랫폼</p>
+                                <p><span class="works-hiddenFrame-title">특징</span>: react. 이더리움 기반. 자사에서 백엔드, 프론트 전부 구현</p>
+                                <p><span class="works-hiddenFrame-title">본인기여도</span>: 프론트엔드 전담. 라우터, 리덕스, api 연동 등 틀을 구성</p>
+                            </div>
+                            <a href="#!" target="_blank"><div class="btn_narrow blue_btn works_btn">more</div></a>
+                        </div>
+                    </div>
+                    <p class="works-title">ETRI</p>
+                </li>
+                <li class="l-col l-col-6">
+                    <div class="works-frame">
+                    <img class="works-frame-img" src="img/hancomsledger.png" alt="">
+                        <div class="works-hiddenFrame">
+                            <div class="works-hiddenFrame-textbox">
+                                <p><span class="works-hiddenFrame-title">설명</span>: 한컴 블록체인 사업부 하이퍼레져 솔루션</p>
+                                <p><span class="works-hiddenFrame-title">특징</span>: 하이퍼레져 기반, 프론트 담당, 테마변경기능, 다국어지원</p>
+                                <p><span class="works-hiddenFrame-title">본인기여도</span>: react기반의 UI, 데이터 바인딩</p>
+                            </div>
+                            <a href="#!" target="_blank"><div class="btn_narrow blue_btn works_btn">more</div></a>
+                        </div>
+                    </div>
+                    <p class="works-title">hancomSLedger</p>
+                </li>
+                <li class="l-col l-col-6">
+                    <div class="works-frame">
+                    <img class="works-frame-img" src="img/explorer.png" alt="">
+                        <div class="works-hiddenFrame">
+                            <div class="works-hiddenFrame-textbox">
+                                <p><span class="works-hiddenFrame-title">설명</span>: 다온코인 탐색기</p>
+                                <p><span class="works-hiddenFrame-title">특징</span>: react. 블록체인.</p>
+                                <p><span class="works-hiddenFrame-title">본인기여도</span>: react기반의 UI 100%</p>
+                            </div>
+                            <a href="#!" target="_blank"><div class="btn_narrow blue_btn works_btn">more</div></a>
+                        </div>
+                    </div>
+                    <p class="works-title">andus explorer</p>
+                </li>
+                <li class="l-col l-col-6">
+                    <div class="works-frame">
+                    <img class="works-frame-img" src="img/ar_player.jpg" alt="" style="padding-top: 12%;">
+                        <div class="works-hiddenFrame">
+                            <div class="works-hiddenFrame-textbox">
+                                <p><span class="works-hiddenFrame-title">설명</span>: 의사교육용 학습동영상 제작</p>
+                                <p><span class="works-hiddenFrame-title">특징</span>: 동영상에 가상태그를 심어 편집동영상을 넘어선 실시간 학습기능 제공, 360˚ view</p>
+                                <p><span class="works-hiddenFrame-title">본인기여도</span>: 촬영, 스크립팅 계획서 작성, 플랫폼 마크업 100%, UI Scripting 100%, 동영상 action scripting 100%</p>
+                            </div>
+                            <a href="#!" target="_blank"><div class="btn_narrow blue_btn works_btn">more</div></a>
+                        </div>
+                    </div>
+                    <p class="works-title">해외수출용 의술 학습 플랫폼 및 동영상 제작</p>
+                </li>
+                <li class="l-col l-col-6">
+                    <div class="works-frame">
+                    <img class="works-frame-img" src="img/coordi1.jpg" alt="">         
+                        <div class="works-hiddenFrame">
+                            <div class="works-hiddenFrame-textbox">
+                                <p><span class="works-hiddenFrame-title">설명</span>: 성형외과 홈페이지 리뉴얼 및 유지보수</p>
+                                <p><span class="works-hiddenFrame-title">특징</span>: 코드이그나이터기반, 게시판연동, 예약서비스기능</p>
+                                <p><span class="works-hiddenFrame-title">본인기여도</span>: 마크업 100%, UI Scripting 100%, 게시판 유지보수</p>
+                            </div>
+                            <a href="#!" target="_blank"><div class="btn_narrow blue_btn works_btn">more</div></a>
+                        </div>
+                    </div>
+                    <p class="works-title">성형외과 홈페이지 제작 및 유지보수</p>
+                </li>
+                <li class="l-col l-col-6">
+                    <div class="works-frame">
+                    <img class="works-frame-img" src="img/b1pay.jpg" alt="">
+                        <div class="works-hiddenFrame">
+                            <div class="works-hiddenFrame-textbox">
+                                <p><span class="works-hiddenFrame-title">설명</span>: 선정산 서비스 플랫폼 개발</p>
+                                <p><span class="works-hiddenFrame-title">특징</span>: 백은 java기반, 프론트는 jquery기반 구성</p>
+                                <p><span class="works-hiddenFrame-title">본인기여도</span>: 퍼블리싱 및 UI scripting, ajax를 활용한 데이터 바인딩 100%</p>
+                            </div>
+                            <div href="http://sjorbit.dothome.co.kr/matx/" target="_blank"><div class="btn_narrow blue_btn works_btn">more</div></div>
+                        </div>
+                    </div>
+                    <p class="works-title">b1pay 프론트 개발</p>
+                </li>
+                <li class="l-col l-col-6">
+                    <div class="works-frame">
+                    <img class="works-frame-img" src="img/free_kb.jpg" alt="프리랜서 KB증권">
+                        <div class="works-hiddenFrame">
+                            <div class="works-hiddenFrame-textbox">
+                                <p><span class="works-hiddenFrame-title">설명</span>: KB증권 교육사이트 퍼블리싱 외주</p>
+                                <p><span class="works-hiddenFrame-title">특징</span>: 모바일/PC 적응형 작업.</p>
+                                <p><span class="works-hiddenFrame-title">본인기여도</span>: 마크업 100%, UI Scripting 100%</p>
+                            </div>
+                            <a href="http://sjorbit.dothome.co.kr/marketer/" target="_blank"><div class="btn_narrow blue_btn works_btn">more</div></a>
+                        </div>
+                    </div>
+                    <p class="works-title">KB증권 교육 퍼블리싱</p>
+                </li>
+                <li class="l-col l-col-6">
+                    <div class="works-frame">
+                    <img class="works-frame-img" src="img/free_tv.jpg" alt="" style="border-bottom: 1px solid #ddd;border-top: 1px solid #ddd; margin-top: 10%;">
+                        <div class="works-hiddenFrame">
+                            <div class="works-hiddenFrame-textbox">
+                                <p><span class="works-hiddenFrame-title">설명</span>: 신기한나라 관리자페이지 퍼블리싱 외주</p>
+                                <p><span class="works-hiddenFrame-title">특징</span>: pc적응형. </p>
+                                <p><span class="works-hiddenFrame-title">본인기여도</span>: 마크업 100%, UI Scripting 100%</p>
+                            </div>
+                            <a href="#!" target="_blank"><div class="btn_narrow blue_btn works_btn">more</div></a>
+                        </div>
+                    </div>
+                    <p class="works-title">신기한나라 관리자페이지 퍼블리싱</p>
+                </li>
+                <li class="l-col l-col-6">
+                    <div class="works-frame">
+                    <img class="works-frame-img" src="img/socar.jpg" alt="" style="border-bottom: 1px solid #ddd;border-top: 1px solid #ddd; margin-top: 10%;">
+                        <div class="works-hiddenFrame">
+                            <div class="works-hiddenFrame-textbox">
+                                <p><span class="works-hiddenFrame-title">설명</span>: socar 관리자페이지 퍼블리싱 외주</p>
+                                <p><span class="works-hiddenFrame-title">특징</span>: 백엔드, js 기능이 구현되어 있는 페이지에 디자인과 마크업만 변경</p>
+                                <p><span class="works-hiddenFrame-title">본인기여도</span>: 기존 구현기능을 건들이지 않으면서 html, css변경 100%, 디자인 0%</p>
+                            </div>
+                            <a href="#!" target="_blank"><div class="btn_narrow blue_btn works_btn">more</div></a>
+                        </div>
+                    </div>
+                    <p class="works-title">SOCAR 관리자페이지 퍼블리싱</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="sns" class="main-section shadow_bg">
+        <div class="l-wrapper">
+            <div class="content">
+                <h1 class="sns_title">Let's retrace the course of my development</h1>
+                <p class="sns_title_desc">저의 성장 과정을 한 눈에 보실 수 있습니다.</p>
+                <a href="http://susu91.tistory.com/" target="_blank">
+                    <button class="blue_btn btn_normalsize">Blog1</button>
+                </a>
+                <a href="http://susu91.tistory.com/" target="_blank">
+                    <button class="blue_btn btn_normalsize">Blog2</button>
+                </a>
+                <a href="https://github.com/sujeong91" target="_blank">
+                    <button class="blue_btn btn_normalsize">Github</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="l-wrapper">
+            <p>Copyright &copy; Front End Developer by sujeong, Kim. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
