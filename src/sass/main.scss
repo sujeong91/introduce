@@ -36,16 +36,16 @@ header {
     }
     &.on::after {
       position: absolute;
-      bottom: -1em;
+      bottom: -1.1em;
       left: 0.5em;
       content: '';
       width: 100%;
       border-bottom: 4px solid #0088cc;
       border-radius: 1px;
     }
-    // &.scrollOn {
-    //   background-color: #FFF; color: #333; box-shadow: 0px 2px 12px rgba(0,0,0,.3);
-    // }
+  }
+  &.scrollOn {
+    background-color: #FFF; color: #333; box-shadow: 0px 2px 12px rgba(0,0,0,.3);
   }
 }
 
@@ -152,7 +152,7 @@ header {
     font-size: 1.8rem;
     color:#2385c6;
     margin:0.5em 0 1.0em;
-    padding: 0.3em;
+    padding: 0.3em 10px;
     border-top: 2px solid #1476b7;
     box-shadow: 0px 0px 10px rgba(0,0,0,.1);
   }
@@ -183,14 +183,14 @@ header {
   .works-frame {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 500px;
     overflow: hidden;
     border: 1px solid #dadada;
     background-color: #fff;
   }
   .works-frame-img { width: 100%; }
   .works-hiddenFrame {
-    display:block;
+    display: none;
     position: absolute;
     top:0; bottom:0;left:0;right:0;
     background-color: rgba(0,0,0,.8);
@@ -206,6 +206,7 @@ header {
     p {
       margin-bottom: 1.0em;
       font-size: 1.4rem;
+      white-space: pre;
     }
   }
   .works-hiddenFrame-title { color: #3abafa; }
@@ -227,7 +228,7 @@ header {
     font-weight: bold;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .l-col-6 {
       width: 100%;
     }
