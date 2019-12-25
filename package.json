@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/sujeong91/introduce/issues"
   },
-  "homepage": "https://sujeong91.github.io/introduce/",
+  "homepage": "https://github.com/sujeong91/introduce#readme",
   "devDependencies": {
     "@babel/cli": "^7.7.4",
     "@babel/core": "^7.7.4",
