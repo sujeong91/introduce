@@ -6,8 +6,7 @@
   "scripts": {
     "build": "webpack -w",
     "start": "webpack-dev-server --open",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build"
   },
   "repository": {
     "type": "git",
