@@ -1,5 +1,7 @@
 import $ from 'jquery';
 import { skills, works } from './constant';
+import logoBlack from '../img/header-logo.png';
+import logoWhite from '../img/header-logo-white.png';
 
 /**
  * [func] underlineMenu : 해당 메뉴 아래에 언더라인 효과
@@ -98,10 +100,10 @@ const scrollChangeHeader = () => {
         
         if ( windowScrollTop > point ) {
           $header.addClass("scrollOn");
-          $headerLogo.attr("src", "./src/img/header-logo.png");
+          $headerLogo.attr("src", logoBlack);
         } else {
           $header.removeClass("scrollOn");
-          $headerLogo.attr("src", "./src/img/header-logo-white.png");
+          $headerLogo.attr("src", logoWhite);
         }
       });
     }
@@ -135,22 +137,24 @@ const makeSkillItem = () => {
 const makeWoksItem = () => {
     const worksBox = document.querySelector('.works-box');
     const worksItem = works.map((work) => {
-        return `
-            <li class="l-col l-col-6">
-                <div class="works-frame">
+      return `
+          <li class="l-col l-col-6">
+              <div class="works-frame">
+                  <div class="works-frame-imgBox">
                     <img class="works-frame-img" src=${work.thumbSrc} alt=${work.alt}>
-                    <div class="works-hiddenFrame">
-                        <div class="works-hiddenFrame-textbox">
-                            <p><span class="works-hiddenFrame-title">설명</span>: ${work.desc}</p>
-                            <p><span class="works-hiddenFrame-title">특징</span>: ${work.feature}</p>
-                            <p><span class="works-hiddenFrame-title">본인기여도</span>: ${work.contribution}</p>
-                        </div>
-                        <a href=${work.buttonUrl} target="_blank"><div class="btn_narrow blue_btn works_btn">more</div></a>
-                    </div>
-                </div>
-                <p class="works-title">${work.title}</p>
-            </li>
-        `;
+                  </div>
+                  <div class="works-hiddenFrame">
+                      <div class="works-hiddenFrame-textbox">
+                          <p><span class="works-hiddenFrame-title">설명</span>: ${work.desc}</p>
+                          <p><span class="works-hiddenFrame-title">특징</span>: ${work.feature}</p>
+                          <p><span class="works-hiddenFrame-title">본인기여도</span>: ${work.contribution}</p>
+                      </div>
+                      <!-- <a href=${work.buttonUrl} target="_blank"><div class="btn_narrow blue_btn works_btn">more</div></a> -->
+                  </div>
+              </div>
+              <p class="works-title">${work.title}</p>
+          </li>
+      `;
     }).join('');
     worksBox.innerHTML = worksItem;
 };

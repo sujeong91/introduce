@@ -3,18 +3,26 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    // entry file
+    // entry: 진입점이 될 파일들.
     entry: ['@babel/polyfill', './src/js/main.js', './src/sass/main.scss'],
-    // 컴파일 + 번들링된 js 파일이 저장될 경로와 이름 지정
+    // 빌드된 파일에 대한 설정: 컴파일 + 번들링된 js 파일이 저장될 경로와 이름 지정
     output: {
         path: path.resolve(__dirname, 'dist/'),
-        filename: 'js/bundle.js'
+        filename: 'js/bundle.js',
+        publicPath: '/',
+    },
+    devServer: {
+        contentBase: path.resolve("dist/"),
+        index: "index.html",
+        hot: true,
+        host: "localhost",
+        port: 9000
     },
     plugins: [
         new MiniCssExtractPlugin({ filename: 'css/style.css' }),
         new htmlWebpackPlugin({ 
-            template: 'index.html',
-            filename: 'index.html' 
+            template: 'index.html', // entry file root
+            filename: 'index.html'  // build file name
         }),
     ],
     module: {
@@ -34,6 +42,7 @@ module.exports = {
             },
             {
                 test: [/\.scss$/, /\.css$/],
+                // loader 읽는 순서: 아래에서 위로 읽음.
                 use: [
                     MiniCssExtractPlugin.loader,
                     "css-loader",
@@ -64,5 +73,6 @@ module.exports = {
         ]
     },
     devtool: 'source-map',
+    // webpack build option: production은 최적화되어 빌드되어지는 특징을 가지고 있고 development는 빠르게 빌드하는 특징, none 같은 경우는 아무 기능 없이 웹팩으로 빌드
     mode: 'development'
 };

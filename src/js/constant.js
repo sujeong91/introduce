@@ -1,3 +1,13 @@
+import etri from '../img/etri.png';
+import hancom from '../img/hancomsledger.png';
+import andusExplore from '../img/explorer.png';
+import arPlayer from '../img/ar_player.jpg';
+import plasticSurgery from '../img/coordi1.jpg';
+import b1pay from '../img/b1pay.jpg';
+import kb from '../img/free_kb.jpg';
+import shingihannara from '../img/free_tv.jpg';
+import socar from '../img/socar.jpg';
+
 export const skills = [
   {
     title: 'HTML',
@@ -55,7 +65,7 @@ export const skills = [
 export const works = [
   {
     title: 'ETRI',
-    thumbSrc: './src/img/etri.png',
+    thumbSrc: etri,
     alt: 'etri',
     desc: '태양광 전기 p2p 플랫폼',
     feature: 'react. 이더리움 기반. 자사에서 백엔드, 프론트 전부 구현',
@@ -64,7 +74,7 @@ export const works = [
   },
   {
     title: 'hancomSLedger',
-    thumbSrc: './src/img/hancomsledger.png',
+    thumbSrc: hancom,
     alt: 'hancome',
     desc: '한컴 블록체인 사업부 하이퍼레져 솔루션',
     feature: '하이퍼레져 기반, 프론트 담당, 테마변경기능, 다국어지원',
@@ -73,7 +83,7 @@ export const works = [
   },
   {
     title: 'andus explorer',
-    thumbSrc: './src/img/explorer.png',
+    thumbSrc: andusExplore,
     alt: 'explorer',
     desc: '다온코인 탐색기',
     feature: 'react. 블록체인.',
@@ -82,7 +92,7 @@ export const works = [
   },
   {
     title: '해외수출용 의술 학습 플랫폼 및 동영상 제작',
-    thumbSrc: './src/img/ar_player.jpg',
+    thumbSrc: arPlayer,
     alt: 'ar_player',
     desc: '의사교육용 학습동영상 제작',
     feature: '동영상에 가상태그를 심어 편집동영상을 넘어선 실시간 학습기능 제공, 360˚ view',
@@ -91,7 +101,7 @@ export const works = [
   },
   {
     title: '성형외과 홈페이지 제작 및 유지보수',
-    thumbSrc: './src/img/coordi1.jpg',
+    thumbSrc: plasticSurgery,
     alt: 'coordi1',
     desc: '성형외과 홈페이지 리뉴얼 및 유지보수',
     feature: '코드이그나이터기반, 게시판연동, 예약서비스기능',
@@ -100,7 +110,7 @@ export const works = [
   },
   {
     title: 'b1pay 프론트 개발',
-    thumbSrc: './src/img/b1pay.jpg',
+    thumbSrc: b1pay,
     alt: 'b1pay',
     desc: '선정산 서비스 플랫폼 개발',
     feature: '백은 java기반, 프론트는 jquery기반 구성',
@@ -109,7 +119,7 @@ export const works = [
   },
   {
     title: 'KB증권 교육 퍼블리싱',
-    thumbSrc: './src/img/free_kb.jpg',
+    thumbSrc: kb,
     alt: 'free_kb',
     desc: 'KB증권 교육사이트 퍼블리싱 외주',
     feature: '모바일/PC 적응형 작업.',
@@ -118,7 +128,7 @@ export const works = [
   },
   {
     title: '신기한나라 관리자페이지 퍼블리싱',
-    thumbSrc: './src/img/free_tv.jpg',
+    thumbSrc: shingihannara,
     alt: 'free_tv',
     desc: '신기한나라 관리자페이지 퍼블리싱 외주',
     feature: 'pc적응형.',
@@ -127,7 +137,7 @@ export const works = [
   },
   {
     title: 'SOCAR 관리자페이지 퍼블리싱',
-    thumbSrc: './src/img/socar.jpg',
+    thumbSrc: socar,
     alt: 'socar',
     desc: 'socar 관리자페이지 퍼블리싱 외주',
     feature: '백엔드, js 기능이 구현되어 있는 페이지에 디자인과 마크업만 변경',
