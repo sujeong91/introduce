@@ -7,12 +7,12 @@ module.exports = {
     entry: ['@babel/polyfill', './src/js/main.js', './src/sass/main.scss'],
     // 빌드된 파일에 대한 설정: 컴파일 + 번들링된 js 파일이 저장될 경로와 이름 지정
     output: {
-        path: path.resolve(__dirname, 'dist/'),
+        path: path.resolve(__dirname, 'docs/'),
         filename: 'js/bundle.js',
         publicPath: '/',
     },
     devServer: {
-        contentBase: path.resolve("dist/"),
+        contentBase: path.resolve("docs/"),
         index: "index.html",
         hot: true,
         host: "localhost",
