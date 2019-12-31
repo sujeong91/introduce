@@ -3,14 +3,14 @@
 기존의 웹포트폴리오의 스펙 html, css, es5를 업그레이드하여 모던 웹프론트환경으로 새롭게 만들어봤습니다.<br>
 또한 더 이상 포트폴리오의 역할이 아닌 저의 커리어와 프로젝트 소개용으로 용도가 변환됨에 따라, 내용의 변화도 조금 주었습니다.
 
-## 확인 방법
-- 터미널에서 git clone > cd introduce > npm i > npm run dev > https://localhost:9000
+# 확인 방법
+- 터미널에서 git clone > cd introduce > npm i > npm run start > https://localhost:9000
 
 # point
 react같은 웹프레임워크 및 라이브러리를 사용하지 않은 코드들도 es6이상 사용할 수 있도록 만들고 싶었습니다.
 webpack 설정하는 방법을 알게 되었고 babel과 webpack을 연동하였습니다.
 
-## 'introduce' project structure
+# 'introduce' project structure
 #### 1) 환경 구성
 - node 환경
 - babel, webpack 구축
@@ -30,3 +30,6 @@ es6+ 최신 자바스크립트 문법과 모듈화를 이룰 수 있었습니다
 #### 4) 기여도
 디자인 본인 100%<br>
 코딩 본인 100%
+
+# view
+![introduce_main](https://user-images.githubusercontent.com/33299977/71609812-da109a80-2bce-11ea-98e8-5bbe0781f867.jpg)
