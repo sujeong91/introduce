@@ -32,4 +32,6 @@ es6+ 최신 자바스크립트 문법과 모듈화를 이룰 수 있었습니다
 코딩 본인 100%
 
 # view
+- blog1 : https://velog.io/@susu1991
+- blog2 : https://susu91.tistory.com/
 ![introduce_main](https://user-images.githubusercontent.com/33299977/71609812-da109a80-2bce-11ea-98e8-5bbe0781f867.jpg)
